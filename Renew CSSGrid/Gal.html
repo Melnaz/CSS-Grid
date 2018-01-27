@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gallery2</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+  </head>
+
+    <style media="screen">
+
+     /*Entire body page styling*/
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "article article article"
+        "footer footer footer";
+      grid-template-rows: 70px 1fr 30px;
+      grid-template-columns: 10% ,10%, 10% ;
+      margin: 0;
+      font-family: Arial,Helvetica,sans-serif;
+      background-image: url();
+      background-size: cover;
+      height: 100%;
+      background-color: grey;
+      background: #2f81ce;
+    }
+
+    header, article,footer {
+      padding: 10px;
+      background: white;
+    }
+
+      /*Head of page*/
+    #pageHeader {
+      grid-area: header;
+      height: 150px;
+      width: 970px;
+      margin-left: 45mm;
+      margin-top: 10px;
+      background-color: grey;
+      background-image: url(http://www.wicklowlodge.com/images/wicklowway.jpg?crc=434325929);
+      background-size: cover;
+    }
+
+    .head{
+    	font-family: 'Nosifer', cursive;
+    	font-size: 20px;
+    	margin-left: 100mm;
+    }
+
+    #h4 {
+      font-size: 20px;
+      color: white;
+      margin-top: 0mm;
+      border-bottom: 3px solid white;
+      padding-top: 10px;
+    }
+
+
+      /*Navbar styling*/
+    .dropbtn {
+    background-color: #999999;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+
+    border: none;
+    cursor: pointer;
+    font-family: 'Nosifer', cursive;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: grey;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+img{
+  float: left;
+  margin-left: 10%;
+}
+
+  /*Footer styling*/
+#pageFooter {
+  grid-area: footer;
+  height: 120px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 950px;
+  margin-left: 45mm;
+  margin-top: 520mm;
+  background-image: url(http://www.wicklowlodge.com/images/wicklowway.jpg?crc=434325929);
+  background-size: cover;
+}
+
+#foot {
+  text-align: center;
+  clear: both;
+  padding-top: 7mm;
+}
+
+
+    </style>
+  <body>
+    <header id="pageHeader"><h2 class="head">Adventure Time</h2>
+      </div>
+
+      <div class="dropdown">
+    		<button class="dropbtn">Home</button>
+    		<div class="dropdown-content">
+    			<a href="CSS-Grid.html">Home</a>
+    		</div>
+    	</div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Hiking Trials</button>
+        <div class="dropdown-content">
+          <a href="#Right-face-arrow-face-traverse">Right-Face-Arrow-Face-Traverse</a>
+          <a href="#Witels">Witels</a>
+          <a href="#Alphen">Alphen</a>
+          <a href="#Tranquility-cracks">Tranquility-cracks</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Climbing</button>
+        <div class="dropdown-content">
+          <a href="#Silvermine">Silvermine</a>
+          <a href="#Montagu">Montagu</a>
+          <a href="#Rocklands">Rocklands</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Fishing</button>
+        <div class="dropdown-content">
+          <a href="#Tulbagh">Tulbagh</a>
+          <a href="#Gariep Dam (Hendrik Verwoerd)">Gariep Dam (Hendrik Verwoerd)</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Camping</button>
+        <div class="dropdown-content">
+          <a href="#Tweedetol">Tweedetol</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Conact</button>
+        <div class="dropdown-content">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Gallery</button>
+        <div class="dropdown-content">
+          <a href="Gal.html">Gallery</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\images (1).jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\1.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\1200-woman-hiking.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\b7b3d53106877faebbc28cd90cb5f1e3.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\FISH_025.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\hiking.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://www.travelwyoming.com/sites/default/site-files/files/styles/4_3_medium/public/FISH_025.jpg?itok=5tkM94K1" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://d37d73vc0i3fom.cloudfront.net/assets/content/athens-b5b218efb20dd060709366ece7291f41783c9c71484620ff3fd013b5a4f8b270.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://www.shape.com/sites/shape.com/files/1200-woman-hiking.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,q_65,w_768/v1/clients/norway/Fishing_2152634f-ba23-4044-8145-6ec3bab642bf.png" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://media.istockphoto.com/photos/rock-climbing-in-china-picture-id510616195" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="http://www.readersdigest.ca/wp-content/uploads/2015/10/best-hiking-trails-canada.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="http://www.freshwater-fishing.org/media-boxes/home/thumbnails/kid-fishing.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://media.camping-adriatic.com/_versions/jezevac/gallery/camping-jezevac-lungomare-beach-exp-6_col-6.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://static.rootsrated.com/image/upload/s--lCxzMcwh--/t_rr_large_natural/fhmv5qeyknderypamb0n.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="http://www.newlifehikingspa.com/wp-content/uploads/2015/05/hiking.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="http://www.gardenrouteadventureguide.com/uploads/3/5/2/4/3524152/9318052_orig.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://www.fortmyers-sanibel.com/media/16821/stilt_houses_1167_8x10.jpg?anchor=center&mode=crop&width=795&height=558&rnd=131384613140000000" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://outpostmagazine.com/wp-content/uploads/2014/11/canol-trail-ryan-murdock.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://i.ytimg.com/vi/_wzV5LWD0kc/maxresdefault.jpg" width="232" height="155" style=" margin-top: 150px;">
+
+<img class="img" src="https://qph.ec.quoracdn.net/main-qimg-0b3ef826f2ea1536fc038b3c847447ff-c" width="232" height="155" style=" margin-top: 150px;">
+
+
+<footer id="pageFooter">
+
+  <p id="foot">Copyright © 2017 | Outdoor Adventures | All rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+
+</html>

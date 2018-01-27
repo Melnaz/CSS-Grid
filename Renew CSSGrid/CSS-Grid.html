@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Grid Project</title>
+		<link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+	</head>
+	<body>
+<style>
+
+h1 {
+  font-size: 25px;
+  float: left;
+}
+
+
+/* Entire page styling*/
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article article article"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  margin: 0;
+  font-family: Arial,Helvetica,sans-serif;
+  background-image: url();
+  background-size: cover;
+  height: 100%;
+}
+
+header, article,footer {
+  padding: 20px;
+  background: white;
+}
+
+#pageHeader {
+  grid-area: header;
+  height: 180px;
+  width: 1020px;
+  margin-left: 45mm;
+  margin-top: 50px;
+	background-color: grey;
+	background-image: url(http://www.wicklowlodge.com/images/wicklowway.jpg?crc=434325929);
+	background-size: cover;
+}
+
+.head{
+	font-family: 'Nosifer', cursive;
+	font-size: 20px;
+	margin-left: 100mm;
+}
+
+#mainArticle {
+  grid-area: article;
+  height: 2750px;
+  margin-top: 270px;
+  width: 100mm;
+  margin-left: 45mm;
+	margin-right: 45mm;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 305px 305px 305px;
+        color: #444;
+    }
+
+
+    #para {
+			background-size: cover;
+      font-size: 13px;
+      margin-top: -10mm;
+			margin-right: 0mm;
+		}
+
+			/*Layout for the main information*/
+    .one {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        margin-top: -10mm;
+        background-color: white;
+
+    }
+
+		.two {
+			grid-column: 4;
+			grid-row: 1 / 4;
+			width: 79%;
+			height: 20%;
+		}
+
+    .six {
+        grid-column-start: 1 ;
+        grid-column-end: 2 ;
+        grid-row: 2 ;
+        width: 400px;
+        background-color: white;
+    }
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+        width: 400px;
+        margin-left: 35mm;
+        background-color: white;
+				height: 50%;
+    }
+
+    .five {
+        grid-column: 3;
+        grid-row: 3;
+        width: 400px;
+        margin-left: -48mm;
+        background-color: white;
+				margin-top: -750px;
+    }
+
+    .three {
+        grid-column-start: 2 ;
+        grid-column-end: 3 ;
+        grid-row: 3 ;
+        width: 400px;
+        background-color: white;
+        margin-left: -83mm;
+        margin-top: 0mm;
+    }
+
+    h2 {
+      border-bottom: 2px solid #A7003B;
+			font-family: Philosopher,sans-serif;
+			width: 250px;
+			text-align: center;
+    }
+
+    h3 {
+      border-bottom: 2px #A7003B;
+      width: 250px;
+			text-align: center;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+		/*Footers information*/
+    #pageFooter {
+      grid-area: footer;
+      height: 120px;
+      font-family:Arial, Helvetica, sans-serif;
+      width: 950px;
+      margin-left: 45mm;
+      margin-top: -5mm;
+			background-image: url(http://www.wicklowlodge.com/images/wicklowway.jpg?crc=434325929);
+			background-size: cover;
+			position: static;
+    }
+
+    #foot {
+      text-align: center;
+      clear: both;
+      padding-top: 7mm;
+    }
+
+
+		#h4 {
+      font-size: 20px;
+      color: white;
+      margin-top: 0mm;
+      border-bottom: 3px solid white;
+      padding-top: 10px;
+    }
+
+
+		/*Navbar styling*/
+		.dropbtn {
+    background-color: #999999;
+    color: black;
+    padding: -20px;
+		width: 37mm;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+		font-family: 'Nosifer', cursive;
+}
+
+	/*Sidebar styling*/
+.dropbtn2 {
+background-color: #999999;
+color: black;
+padding: -20px;
+width: 80mm;
+margin-left: -30mm;
+font-size: 20px;
+border: none;
+cursor: pointer;
+font-family: 'Nosifer', cursive;
+}
+
+.dropdown {
+    position: static;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+		background-color: grey;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: white}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+</style>
+<body>
+
+
+  <header id="pageHeader"><h2 class="head">Adventure Time</h2>
+	</div>
+	<div class="dropdown">
+		<button class="dropbtn">Home</button>
+		<div class="dropdown-content">
+			<a href="CSS-Grid.html">Home</a>
+		</div>
+	</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Hiking Trials</button>
+			<div class="dropdown-content">
+				<a href="#Right-face-arrow-face-traverse">Right-Face-Arrow-Face-Traverse</a>
+				<a href="#Witels">Witels</a>
+				<a href="#Alphen">Alphen</a>
+				<a href="#Tranquility-cracks">Tranquility-cracks</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Climbing</button>
+			<div class="dropdown-content">
+				<a href="#Silvermine">Silvermine</a>
+				<a href="#Montagu">Montagu</a>
+				<a href="#Rocklands">Rocklands</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Fishing</button>
+			<div class="dropdown-content">
+				<a href="#Tulbagh">Tulbagh</a>
+				<a href="#Gariep Dam (Hendrik Verwoerd)">Gariep Dam (Hendrik Verwoerd)</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Camping</button>
+			<div class="dropdown-content">
+				<a href="#Tweedetol">Tweedetol</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Contact</button>
+			<div class="dropdown-content">
+				<a href="ContactPage.html">Contact</a>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Gallery</button>
+			<div class="dropdown-content">
+				<a href="Gal.html">Gallery</a>
+			</div>
+		</div>
+	</div>
+
+</header>
+  <article id="mainArticle">
+
+    <div class="wrapper">
+			<div class="two">
+				<div id="para">
+					<div class="dropdown">
+  <button class="dropbtn2">Click here for more fun activities</button>
+  <div class="dropdown-content">
+		<li><a href="https://theculturetrip.com/africa/south-africa/articles/10-outdoor-activities-and-adventure-sports-to-enjoy-in-cape-town/"target="_blank">10 Outdoor activities and adventure sports to enjoy in Cape Town</a></li>
+		<li><a href="http://capeadventurezone.com/">Cape Adventure Zone</a></li>
+		<li><a href="https://www.travelnownow.co.za/item/cape-xtreme-adventure-tours/">Cape-Xtreme Adventure Tours</a></li>
+		<li><a href="http://www.macsadventure.com/walking-holidays/10-benefits-of-spending-time-outdoors/">10-benefits-of-spending-time-outdoors</a></li>
+		<li><a href="https://herpackinglist.com/2013/10/what-to-wear-and-pack-for-a-day-hike/">What to wear?</a></li>
+		<li><a href="https://www.similarweb.com/top-websites/category/sports/fishing">Top-websites</a></li>
+	</div>
+		</div>
+				</div>
+
+      </div>
+      <div class="one">
+        <iframe src="https://www.youtube.com/embed/B1jM3kFwOio" width="700px" height="350px"></iframe>
+      </div>
+
+      <div class="three">
+        <h2 id="Camping Sites">Camping Sites</h2>
+				<h3 id="Tweedetol">Tweedetol</h3>
+				<img src="https://www.sa-venues.com/attractions/gallery/westerncape/1046/3.jpg" alt="camping sites" width="390" height="150">
+				<div>
+        <p>Tweede Tol is a Cape Nature camping and picnic site 16 kilometres from Wellington up the Bainskloof Pass, in the Limietberg Nature Reserve - a huge 102 000 hectare mountain, wildlife and fynbos reserve in the mountains.Tweede Tol is a Cape Nature camping and picnic site 16 kilometres from Wellington up the Bainskloof Pass, in the Limietberg Nature Reserve - a huge 102 000 hectare mountain, wildlife and fynbos reserve in the mountains.
+				</p>
+      </div>
+
+		</div>
+
+			<div class="four">
+        <h2 id="Fishing Sites">Fishing sites</h2>
+        <h3 id="Tulbagh">Tulbagh</h3>
+				<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\download.jpg" alt="" width="390" height="240">
+        <p>The long summer days can be cooled by a swim in the dam or a dip in the pool. Snow capped mountains in winter are delightful,
+        especially when you can warm up by an open fire.</p>
+
+        <h2 id="Eastern Cape fishing site">Eastern Cape fishing</h2>
+				<h3 id="Gariep Dam (Hendrik Verwoerd)">Gariep Dam (Hendrik Verwoerd)</h3>
+				<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\images.jpg" alt="" width="420" height="190">
+        <p>You will find a variety of accommodation in Gariep Dam. The Gariep Dam area is known for its quiet and relaxed atmosphere fresh air and beautiful stars at night. It is a key attraction with tourists all over South Africa and the focus is on water sport and nature. Gariep Dam is the biggest Dam in South Africa and attracts fishing enthusiasts and boat lovers. It is surrounded by nature reserves with wildlife running on open plains.
+					The known 165km Gariep Route runs around the dam and it includes a stop at the 80km Oviston tunnel that is one of the longest of its kind in the world. With the 1km bridges running over the Orangeriver near Bethulie.</p>
+      </div>
+
+      <div class="five">
+        <h2 id="climbing spots">Climbing Spots</h2>
+        <h3 id="Silvermine">Silvermine</h3>
+				<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\Nightjar RC Table Mountain Cableway Crag, image Shaen Adey DSC01830.jpg" alt="" width="390" height="240">
+        <p>Silvermine is probably the most popular climbing area on the Cape Peninsula with short walk-ins, good rock quality
+          and many excellent routes. Silvermine has five different crags and over 80 routes with grades ranging from 13 to 28.
+           The crags go into the shade in the early afternoon. The Lower Silvermine Crag has easy routes and is perfect for beginners,
+           Blaze of Glory is a little harder, Silvermine Main Crag is a good all round crag and Fawlty Towers for some harder stuff.
+           The most recent addition is Silverminor Crag.</p>
+
+           <h3 id="Rocklands">Rocklands</h3>
+					 <img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\download (1).jpg" alt="" width="420" height="180">
+           <p>Rocklands is found in the Cederberg mountains 250km/3 hours north of Cape Town. It is a very beautiful area in a semi-desert
+            setting, very isolated and very safe. Rocklands is undoubtedly famous for it's world class bouldering but this should not deter
+            you from sampling the fine sport climbing. There is a large variety of quality climbing of all grades in both bouldering and sport
+            climbing.</p>
+
+            <h3 id="Montagu">Montagu</h3>
+						<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\guided_climbing_20110716_IMG_0940.jpg" alt="" width="320" height="180">
+            <p>Montagu is recognised as one of the most outstanding climbing destinations in South Africa due to the quality and number of climbing routes
+              available. Montagu’s rock walls offer a wide variety of climbing opportunities at every level from beginner to expert.</p>
+
+							<br>
+							<br>
+							<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\b7b3d53106877faebbc28cd90cb5f1e3.jpg" alt=""width="90%"height="40%">
+
+			</div>
+
+      <div class="six">
+        <h2 id="Hiking Trails">Hiking Trails</h2>
+				<h3 id="Tranquility-cracks">Tranquility-cracks</h3>
+				<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\Nightjar RC Table Mountain Cableway Crag, image Shaen Adey DSC01830.jpg" alt="" width="390" height="200">
+				<p>Tranquility Cracks refers directly to deep fissures in the rocks above Camps Bay through which one passes, about halfway along the Twelve Apostles. Beyond the cracks is a labyrinth of rocky corridors.
+					There are a number of passages to choose from, all of which offer incredible views. Inside the cracks grow yellowwood trees that have earned the hike the alternative title of Yellowwood Cracks. Here you are sheltered from any wind and sun.
+					Corridor Ravine is one of several paths that lead off the Pipe Track and is considered the easiest. It is the ravine after Slangolie (Slangolie is considered treacherous and not advisable to take), but has no marker of its own, so you need to keep your eyes peeled.
+					The track up Corridor Ravine, which actually is more of a valley between Corridor buttress and Verreaux Crag, is steep with loose stones and some slippery sections, so it can take you about an hour to reach the top. Numerous breaks will afford you views over the Atlantic and across to Lion's Head.</p>
+
+					<h3 id="Right-face-arrow-face-traverse">Right-face-arrow-face-traverse</h3>
+						<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\download (2).jpg" alt="" width="400" height="180">
+						<p>This route starts at the same place as the Platteklip Gorge trail, but turns right onto the contour path, which you follow until you reach what you think might be Union Cave.  Then you go up what you think is Yellowstone Gully, before realising it’s actually Union Ravine (because once again, Alison was doing a terrible job of leading from the back and the point where the path splits off to the right isn’t very clear), so then you have a big debate about whether to keep going up Union Ravine and decide that as much as it galls you, since you didn’t bring a map that shows where Union Ravine ends up, you should probably go all the way back down and then bundu bash across to Yellowstone Gully, where you can actually see four old ballies pointing (and probably laughing) at you from their privileged position on the correct path.
+						From Yellowstone Gully, you meander up to what you think might be Andy’s Cave (where you fill your water bottles) making optimistic predictions that ‘very soon there will be some flat’ and hopeful promises that ‘it’s not all uphill’.  Until you eventually reach the traverse and hear maniacal laughter echoing across the cliffs from ahead of you.</p>
+
+            <h3 id="Witels">Witels</h3>
+						<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\download (3).jpgpg" alt="" width="400" height="220">
+            <p>Witels is a wonderful Kloofing trip between Worcester and Ceres. The best time of year to do this hike is between November and February. Winter is not recommended though if you like to ski then hiking up to Hoare Hut would be a must. This is a UCT owned hut so book in advance. Permits for Witels can be obtained, as well, from the UCT Mountain Club. It is not for the faint hearted or for those who don't like swimming, as swimming is compulsory at some points during the kloofing trip, so unless you have spiderman powers, and hate swimming, don't do this hike.</p>
+
+              <h3 id="Alphen">Alphen</h3>
+							<img src="C:\Users\Academy2\Desktop\My Projects\CSS\Grids\Renew CSSGrid\Renew CSSGrid\Grid images\download (4).jpg" alt="" width="320" height="180">
+              <p>The Alphen Trail is possibly one of the most popular of the green belt walks of the Constantia Valley. The walk can start at either end, but most people park their cars on the bend of Alphen Drive that leads off Constantia Main Road to the Alphen Hotel (a national monument in its own right with beautiful gardens and tea to die for, if you’re looking for somewhere to do ‘high tea’ before or after your walk).The trail winds along the Diep River to the Constantiaberg Mountain and in places allows one to walk on either side of the river, with a number of bridge crossings. It’s a beautiful walk filled with lush grass, trees, beautiful skies and the Le Sueur Meadow on the far end of the walk towards Hohenort.</p>
+      </div>
+
+  </article>
+
+  <footer id="pageFooter">
+
+		<p id="foot">Copyright © 2017 | Outdoor Adventures | All rights Reserved</p>
+		</div>
+  </footer>
+</body>
+	</body>
+</html>
